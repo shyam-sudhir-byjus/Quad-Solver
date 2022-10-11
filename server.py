@@ -54,6 +54,7 @@ def solve_equation():
 
         number = find_number(equation)
         temp_number = number
+        number = number/number_left
 
         if number is False:
             return make_response(jsonify(
