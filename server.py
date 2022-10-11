@@ -16,9 +16,7 @@ ca = certifi.where()
 
 client = MongoClient('localhost', 27017)
 
-dbs = client.list_database_names()
 solveapi_db = client.SolveAPI
-collections = solveapi_db.list_collection_names()
 
 printer = PrettyPrinter()
 
